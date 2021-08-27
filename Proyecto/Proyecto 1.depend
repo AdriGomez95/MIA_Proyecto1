@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1628997644 source:/home/fabian/Escritorio/Proyecto 1/main.cpp
+	<iostream>
+	<fstream>
+
+1630016993 source:/home/fabian/Escritorio/Proyecto/main.cpp
+	<iostream>
+	<cstdio>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<ctype.h>
+	<unistd.h>
+	<stdbool.h>
+	<errno.h>
+	"Analizador.h"
+
+1629909886 /home/fabian/Escritorio/Proyecto/Analizador/parser.h
+
+1629909886 source:/home/fabian/Escritorio/Proyecto/Analizador/parser.cpp
+	<iostream>
+	<stdio.h>
+	"mkdisk.h"
+	<stddef.h>
+	<libintl.h>
+	<alloca.h>
+	<malloc.h>
+	<stdlib.h>
+	<stdlib.h>
+	<stdio.h>
+
+1629909884 source:/home/fabian/Escritorio/Proyecto/Analizador/scanner.cpp
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<stdlib.h>
+	<inttypes.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"parser.h"
+	<unistd.h>
+
+1629909884 /home/fabian/Escritorio/Proyecto/Analizador/scanner.h
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<stdlib.h>
+	<inttypes.h>
+	<unistd.h>
+
+1629764572 source:/home/fabian/Escritorio/Proyecto/mkdisk.cpp
+	"mkdisk.h"
+	<fstream>
+	<list>
+	<stdlib.h>
+
+1629764105 /home/fabian/Escritorio/Proyecto/mkdisk.h
+	<iostream>
+	<string>
+
+1629919199 source:/home/fabian/Escritorio/Proyecto/Analizador.cpp
+	"Analizador.h"
+
+1630036447 /home/fabian/Escritorio/Proyecto/Analizador.h
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdbool.h>
+	<dirent.h>
+	<sys/stat.h>
+	<errno.h>
+	<time.h>
+
