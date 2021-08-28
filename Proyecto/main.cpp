@@ -96,11 +96,11 @@ int main()
         }
         else
         {
-            printf("***** Comando incorrecto *****\nERROR :%s\n",analisis->tokens);
+            printf("***** Comando incorrecto *****\n***** ERROR : %s\n",analisis->tokens);
         }
 
     }
-    while(analisis->opcion!=0);
+    while(analisis->comando!=0);
 
     delete(analisis);
 

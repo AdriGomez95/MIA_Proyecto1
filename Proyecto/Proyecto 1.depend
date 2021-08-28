@@ -3,7 +3,7 @@
 	<iostream>
 	<fstream>
 
-1630016993 source:/home/fabian/Escritorio/Proyecto/main.cpp
+1630043752 source:/home/fabian/Escritorio/Proyecto/main.cpp
 	<iostream>
 	<cstdio>
 	<stdio.h>
@@ -64,10 +64,10 @@
 	<iostream>
 	<string>
 
-1629919199 source:/home/fabian/Escritorio/Proyecto/Analizador.cpp
+1630043681 source:/home/fabian/Escritorio/Proyecto/Analizador.cpp
 	"Analizador.h"
 
-1630036447 /home/fabian/Escritorio/Proyecto/Analizador.h
+1630119715 /home/fabian/Escritorio/Proyecto/Analizador.h
 	<iostream>
 	<string.h>
 	<stdio.h>

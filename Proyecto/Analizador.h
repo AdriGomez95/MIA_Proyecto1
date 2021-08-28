@@ -20,22 +20,19 @@ class Analizador
 {
     public:
         Analizador();
-        int opcion;
+        int comando;
         char entrada[100];
         char *tokens;
-        char Unity;
-        int Unidad;
-        int size;
-        char type;
-        char fit;
-        char fit_disk;
         char direccion[100];
-        bool prueba;
-        bool ver;
+
+        //para el mkdisk
+        int size;
+        char fit;
+        char unidad;
+
 
         //****** ADMINISTRADOR DE DISCOS ******
         void Mkdisk(bool file);
-        //void CrearArchivo(bool bandera_path, bool bandera_size, bool bandera_unit);
 
 };
 

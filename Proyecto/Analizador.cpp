@@ -2,12 +2,9 @@
 
 Analizador::Analizador()
 {
-    this->Unity='k';
-    this->Unidad=1;
-    this->size=0;
-    this->type='p';
-    this->fit='w';
-    this->fit_disk='f';
+    this->size = 0;
+    this->fit = 'bf';
+    this->unidad = 'm';
 }
 
 
@@ -15,87 +12,80 @@ Analizador::Analizador()
 
 void Analizador::Mkdisk(bool file)
 {
-    cout<< "   aquiiiii   4"<< endl;
-    printf("\nMKDISK\n");
-    Unity='k';
-    Unidad=1;
-    type='p';
-    fit='w';
-    fit_disk='f';
-    size=0;
+    cout<< "   aquiiiii   en MKDISK"<< endl;
+
+    size = 0; //obligatorio
+    fit = 'b'; //opcional bf (->w)
+    unidad = 'm'; //opcional m (->k)
 
     memset(direccion,0,100); //se llena el char de direccion de 0
-    bool bandera_unit,bandera_path,bandera_size,bandera_name;
-    bandera_unit=bandera_path=bandera_size=bandera_name=ver=prueba= false;
+
+
     tokens = strtok(NULL," =");
 
+    //recorre todos los tokens
     while(tokens!=NULL)
     {
-        if(strcmp(tokens,"-u") == 0)
+
+        if(strcmp(tokens,"-size") == 0)
         {
-            bandera_unit=true;
-            tokens=strtok(NULL," =");//Obtiene el valor seguido del . y avanza
+            tokens=strtok(NULL," =");
 
-            if(*tokens=='k')
-            {
-                Unidad=1024;
-                Unity='k';
-            }
-            else if(*tokens=='m')
-            {
-                Unidad= 1024*1024;
-                Unity='m';
-            }
-            else
-            {
-                if(file)
-                {
-                    printf("ERROR!! La unidad %s no esta definia, debe ser 'm' o 'k'.\nLINEA DEL ERROR: %d\n",tokens/*,contador*/);
-                }
-                else
-                {
-                    printf("ERROR!! La unidad %s no esta definia, debe ser 'm' o 'k'\n",tokens);
-                }
+            //el numero debe ser mayor a 0, si no, debe mostrar error
+            int numero = atoi(tokens);
+            size = numero;
+        }
 
-                ver = true;
-                break;
+        else if(strcmp(tokens,"-f") == 0)
+        {
+            tokens = strtok(NULL," =");
+
+            if(strcmp(tokens,"bf") == 0)
+            {
+                fit='b';
+            }
+            else if(strcmp(tokens,"ff") == 0)
+            {
+                fit='f';
+            }
+            else if(strcmp(tokens,"wf") == 0)
+            {
+                fit='w';
             }
         }
-        else if(strcmp(tokens,"-f")==0)
+
+        else if(strcmp(tokens,"-u") == 0)
         {
+            //Obtiene el valor seguido del . y avanza
+            tokens=strtok(NULL," =");
+
+            if(*tokens == 'k')
+            {
+                unidad = 'k';
+            }
+            else if(*tokens == 'm')
+            {
+                unidad = 'm';
+            }
+
         }
+
         else if(strcmp(tokens,"-path") == 0)
         {
         }
-        else if(strcmp(tokens,"-size") == 0)
-        {
-        }
-        else
-        {
-            printf("Error mkdisk: %s", tokens);
-            prueba=true;
-            break;
-        }
+
 
         tokens = strtok(NULL," =");
     }
 
-    if(prueba)
-    {
-        if(file)
-        {
-            printf("***** Comando invalido ingresado en Mkdisk *****\n***** LINEA DEL ERROR: %d\n"/*,contador*/);
-        }
-        else
-        {
-            printf("***** Comando invalido ingresado en Mkdisk *****\n");
-        }
-    }
-    else
-    {
-        //CrearArchivo(bandera_path,bandera_size,bandera_unit);
-        printf("vamos a crear el archivo c:");
-    }
+
+    cout<<"\nvamos a crear el archivo c:"<<endl;
+
+    cout<< ""<<endl;
+    cout<< "size: "<<size<<endl;
+    cout<< "unidad: "<<unidad<<endl;
+    cout<< "fit: "<<fit<<endl;
+
 
 }
 
