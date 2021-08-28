@@ -40,12 +40,11 @@
 		</Compiler>
 		<Unit filename="Analizador.cpp" />
 		<Unit filename="Analizador.h" />
+		<Unit filename="include/Analiza.h" />
+		<Unit filename="include/structs.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="mkdisk.cpp" />
-		<Unit filename="mkdisk.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Unit filename="src/Analiza.cpp" />
+		<Unit filename="src/structs.cpp" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

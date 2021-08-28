@@ -79,23 +79,12 @@
 	<errno.h>
 	<time.h>
 
-1630129066 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/main.cpp
+1630135137 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/main.cpp
 	<iostream>
-	<cstdio>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<dirent.h>
-	<sys/types.h>
-	<sys/stat.h>
-	<time.h>
-	<ctype.h>
-	<unistd.h>
-	<stdbool.h>
-	<errno.h>
-	"Analizador.h"
+	<Analiza.h>
 
-1630128731 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.h
+1630130767 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.h
+	<structs.h>
 	<iostream>
 	<string.h>
 	<stdio.h>
@@ -117,6 +106,32 @@
 	<iostream>
 	<string>
 
-1630128804 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.cpp
+1630130859 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.cpp
 	"Analizador.h"
+	<structs.h>
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdbool.h>
+	<dirent.h>
+	<sys/stat.h>
+	<errno.h>
+	<time.h>
+
+1630135602 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/structs.h
+	<string>
+	<ctime>
+
+1630130713 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/structs.cpp
+	"structs.h"
+
+1630135815 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
+	<iostream>
+	<string>
+	<vector>
+	<regex>
+	<iomanip>
+	<algorithm>
 

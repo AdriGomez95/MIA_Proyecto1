@@ -1,26 +1,10 @@
 #include <iostream>
-#include <cstdio>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <dirent.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <time.h>
-#include <ctype.h>
-#include <unistd.h>
-#include <stdbool.h>
-#include <errno.h>
-#include "Analizador.h"
+#include <Analiza.h>
+//#include "Analizador.h"
 
 
 using namespace std;
 
-/*
-string entrada();
-string cadena;
-void leeEntrada(string Entrada);
-*/
 
 /*
 Adriana Gomez
@@ -59,6 +43,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 int main()
 {
+    /*
     cout << "prueba \n";
     Analizador *analisis = new Analizador();
 
@@ -103,8 +88,9 @@ int main()
     }
     while(analisis->comando!=0);
 
-    delete(analisis);
+    delete(analisis);*/
 
+    Analiza inicio;
     return 0;
 }
 

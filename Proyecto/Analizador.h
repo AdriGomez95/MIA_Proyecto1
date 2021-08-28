@@ -1,7 +1,7 @@
 #ifndef ANALIZADOR_H
 #define ANALIZADOR_H
 
-
+#include <structs.h>
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
