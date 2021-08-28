@@ -5,6 +5,7 @@ Analizador::Analizador()
     this->size = 0;
     this->fit = 'bf';
     this->unidad = 'm';
+    //hola
 }
 
 

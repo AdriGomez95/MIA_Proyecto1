@@ -79,3 +79,44 @@
 	<errno.h>
 	<time.h>
 
+1630129066 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/main.cpp
+	<iostream>
+	<cstdio>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<ctype.h>
+	<unistd.h>
+	<stdbool.h>
+	<errno.h>
+	"Analizador.h"
+
+1630128731 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.h
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdbool.h>
+	<dirent.h>
+	<sys/stat.h>
+	<errno.h>
+	<time.h>
+
+1630128731 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/mkdisk.cpp
+	"mkdisk.h"
+	<fstream>
+	<list>
+	<stdlib.h>
+
+1630128731 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/mkdisk.h
+	<iostream>
+	<string>
+
+1630128804 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/Analizador.cpp
+	"Analizador.h"
+

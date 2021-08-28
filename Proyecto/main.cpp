@@ -59,6 +59,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 int main()
 {
+    cout << "prueba \n";
     Analizador *analisis = new Analizador();
 
     //leeEntrada(entrada());
