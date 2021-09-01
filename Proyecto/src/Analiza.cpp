@@ -7,6 +7,12 @@
 #include <regex>
 #include <iomanip>
 #include <algorithm>
+#include <time.h>
+#include <dirent.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -54,10 +60,10 @@ void Analiza::analiza(string cadena)
 
 void Analiza::MKDISK(vector<string> data)
 {
-        int size_mdisk = 0;
-        string fit_mdisk = "bf";
-        string unidad_mdisk = "m";
-        string path_mdisk = "";
+        int size_mkdisk = 0;         //obligatorio
+        string fit_mkdisk = "ff";    //opcional (f por defecto)
+        string unidad_mkdisk = "m";  //opcional (M por defecto)
+        string path_mkdisk = "";     //obligatorio
 
 
         for(int i = 0; i < data.capacity(); i++)
@@ -68,44 +74,128 @@ void Analiza::MKDISK(vector<string> data)
                 {
                     if(data[i] == "-size")
                     {
-                        size_mdisk = stoi(data[i + 1]);
+                        size_mkdisk = stoi(data[i + 1]);
                     }
                     else if(data[i] == "-f")
                     {
-                        fit_mdisk = data[i +1 ];
+                        fit_mkdisk = data[i + 1];
                     }
                     else if(data[i] == "-u")
                     {
-                        unidad_mdisk = data[i +1 ];
+                        unidad_mkdisk = data[i + 1];
                     }
                     else if(data[i] == "-path")
                     {
-                        path_mdisk = data[i + 1];
+                        path_mkdisk = data[i + 1];
                     }
                 }
             }
         }
 
 
-        cout<<"\nvamos a crear el archivo c:"<<endl;
+        //cantidad de unidad 1024 es k
+        int cantidad_Unidad = 1024;
+        if(unidad_mkdisk=="m")  //pero si detecta que por defecto es m, la cantidad cambia
+        {
+            cantidad_Unidad = 1024*1024;
+        }
 
+
+
+
+
+        cout<<"\n-> Valores del disco c:"<<endl;
 
         structs::MBR disk;
         disk.fecha_mbr = time(nullptr);
+        disk.fit_mbr = fit_mkdisk[0];
+        disk.size_mbr = size_mkdisk;
+
         cout<< "fecha: "<<disk.fecha_mbr <<endl;
-
-        disk.size_mbr = size_mdisk;
         cout<< "size: "<<disk.size_mbr<<endl;
-
-        cout<< "unidad: "<<unidad_mdisk<<endl;
-        cout<< "path: "<<path_mdisk<<endl;
-
-        disk.fit_mbr = fit_mdisk[0];
+        cout<< "unidad: "<<unidad_mkdisk<<endl;
+        cout<< "valor de unidad: "<<cantidad_Unidad<<endl;
+        cout<< "path: "<<path_mkdisk<<endl;
         cout<< "fit: "<<disk.fit_mbr<<endl;
+
+        RecorreRuta(path_mkdisk);
+
+        /*
+        char* r = "/home/adri/Escritorio/prueba";
+        if(opendir(r)==NULL)
+        {
+            mkdir(r,0777);
+        }
+        */
+
+}
+
+
+void Analiza::RecorreRuta(string ruta)
+{
+    regex rule("[\\'\"']|[\\/]");
+    vector<string> dat;
+    dat = { sregex_token_iterator(ruta.begin(), ruta.end(), rule, -1), {} };
+    string cadena;
+
+
+    if(dat[1] == "home" )
+    {
+        cadena = "/home";
+        cout<<"entro al 1"<<endl;
+
+        for(int i = 2; i < dat.capacity()-1; i++)
+        {
+            cout<<dat[i]<<endl;
+            cadena = cadena + "/" + dat[i] ;
+            cout<<"esto: "<<cadena<<endl;
+
+            if(opendir(cadena.c_str())==NULL)
+            {
+                cout<<"siuuuu  "<<cadena.c_str()<<endl;
+                mkdir(cadena.c_str(),0777);
+            }
+        }
+    }
+
+    else if(dat[2] == "home")
+    {
+        cadena = "/home";
+        cout<<"entro al 2"<<endl;
+
+        for(int i = 3; i < dat.capacity()-1; i++)
+        {
+            cout<<dat[i]<<endl;
+            cadena = cadena + "/" + dat[i] ;
+            cout<<"esto: "<<cadena<<endl;
+
+            if(opendir(cadena.c_str())==NULL)
+            {
+                cout<<"siuuuu  "<<cadena.c_str()<<endl;
+                mkdir(cadena.c_str(),0777);
+            }
+
+        }
+    }
+
+    else
+    {
+        cout<<"*** INGRESE CORRECTAMENTE EL PATH ***"<<endl;
+    }
+
+
 
 
 
 }
+
+
+
+
+
+
+
+
 
 
 

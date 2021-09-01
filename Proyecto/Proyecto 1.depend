@@ -120,18 +120,36 @@
 	<errno.h>
 	<time.h>
 
-1630135602 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/structs.h
+1630359206 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/structs.h
 	<string>
-	<ctime>
+	<time.h>
 
 1630130713 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/structs.cpp
 	"structs.h"
 
-1630135815 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
+1630441320 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
 	<iostream>
 	<string>
 	<vector>
 	<regex>
 	<iomanip>
 	<algorithm>
+	<dirent.h>
+	<sys/stat.h>
+
+1630476906 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/Analiza.cpp
+	"Analiza.h"
+	<structs.h>
+	<iostream>
+	<string>
+	<vector>
+	<regex>
+	<iomanip>
+	<algorithm>
+	<time.h>
+	<dirent.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<stdio.h>
+	<stdlib.h>
 

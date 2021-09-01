@@ -7,6 +7,8 @@
 #include <regex>
 #include <iomanip>
 #include <algorithm>
+#include <dirent.h>
+#include <sys/stat.h>
 
 using namespace std;
 
@@ -19,6 +21,8 @@ class Analiza
         Analiza();
         void analiza(string cadena);
         void MKDISK(vector<string> datos);
+        void RecorreRuta(string ruta);
+
 
 
 

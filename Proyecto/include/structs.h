@@ -2,7 +2,8 @@
 #define STRUCTS_H
 
 #include <string>
-#include <ctime>
+//#include <ctime>
+#include <time.h>
 
 using namespace std;
 
@@ -13,18 +14,30 @@ class structs
     public:
         structs();
 
-        //estructuras
-        typedef struct _MBR {
-            int size_mbr;
-            int asignacion_mbr;
-            char fit_mbr;
-            time_t fecha_mbr;
+        typedef struct _Particion{
+            char    part_status;
+            char    part_type;
+            char    part_fit;
+            int     part_start;
+            int     part_size;
+            char    part_name[16];
+        }Particion;
 
+
+
+        typedef struct _MBR {
+            int         size_mbr;
+            int         asignacion_mbr;
+            char        fit_mbr;
+            time_t      fecha_mbr;
+            Particion   particion1_mbr;
+            Particion   particion2_mbr;
+            Particion   particion3_mbr;
+            Particion   particion4_mbr;
         }MBR;
 
-    protected:
-
-    private:
 };
+
+
 
 #endif // STRUCTS_H
