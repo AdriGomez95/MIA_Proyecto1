@@ -91,6 +91,7 @@ int main()
     delete(analisis);*/
 
     Analiza inicio;
+
     return 0;
 }
 

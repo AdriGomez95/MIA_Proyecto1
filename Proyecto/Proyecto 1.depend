@@ -79,7 +79,7 @@
 	<errno.h>
 	<time.h>
 
-1630135137 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/main.cpp
+1630562669 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/main.cpp
 	<iostream>
 	<Analiza.h>
 
@@ -120,14 +120,14 @@
 	<errno.h>
 	<time.h>
 
-1630359206 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/structs.h
+1630555698 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/structs.h
 	<string>
 	<time.h>
 
 1630130713 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/structs.cpp
 	"structs.h"
 
-1630441320 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
+1630562185 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
 	<iostream>
 	<string>
 	<vector>
@@ -137,7 +137,7 @@
 	<dirent.h>
 	<sys/stat.h>
 
-1630476906 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/Analiza.cpp
+1630562843 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/Analiza.cpp
 	"Analiza.h"
 	<structs.h>
 	<iostream>

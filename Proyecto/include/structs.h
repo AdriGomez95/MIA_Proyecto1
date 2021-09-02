@@ -27,7 +27,7 @@ class structs
 
         typedef struct _MBR {
             int         size_mbr;
-            int         asignacion_mbr;
+            int         signature_mbr;
             char        fit_mbr;
             time_t      fecha_mbr;
             Particion   particion1_mbr;

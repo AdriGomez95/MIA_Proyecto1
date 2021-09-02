@@ -20,12 +20,15 @@ class Analiza
     public:
         Analiza();
         void analiza(string cadena);
+
+        //del mkdisk
         void MKDISK(vector<string> datos);
         void RecorreRuta(string ruta);
+        //void RecorreRuta(string ruta, int s, string f, string u, int uv);
 
-
-
-
+        //del rmdisk
+        void RMDISK(vector<string> datos);
+        void EliminaRutaArchivo(string ruta);
 
 
 
