@@ -127,7 +127,7 @@
 1630130713 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/structs.cpp
 	"structs.h"
 
-1630562185 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
+1630768652 /home/adri/Escritorio/MIA_Proyecto1/Proyecto/include/Analiza.h
 	<iostream>
 	<string>
 	<vector>
@@ -137,7 +137,7 @@
 	<dirent.h>
 	<sys/stat.h>
 
-1630562843 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/Analiza.cpp
+1630800505 source:/home/adri/Escritorio/MIA_Proyecto1/Proyecto/src/Analiza.cpp
 	"Analiza.h"
 	<structs.h>
 	<iostream>

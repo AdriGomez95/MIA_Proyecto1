@@ -23,13 +23,15 @@ class Analiza
 
         //del mkdisk
         void MKDISK(vector<string> datos);
-        void RecorreRuta(string ruta);
-        //void RecorreRuta(string ruta, int s, string f, string u, int uv);
+        //void RecorreRuta(string ruta);
+        void RecorreRuta(string ruta, int s, string f, string u, int uv);
 
         //del rmdisk
         void RMDISK(vector<string> datos);
         void EliminaRutaArchivo(string ruta);
 
+        //del fdisk
+        void FDISK(vector<string> datos);
 
 
     protected:
