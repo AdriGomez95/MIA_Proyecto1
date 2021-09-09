@@ -36,6 +36,17 @@ class structs
             Particion   particion4_mbr;
         }MBR;
 
+
+
+        typedef struct _EBR {
+            char        name_ebr[16];
+            int         next_ebr;
+            int         size_ebr;
+            int         start_ebr;
+            char        fit_ebr;
+            char        status_ebr;
+        }EBR;
+
 };
 
 

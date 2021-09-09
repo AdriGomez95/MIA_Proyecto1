@@ -21,6 +21,9 @@ class Analiza
         Analiza();
         void analiza(string cadena);
 
+        //del exec
+        void EXEC(vector<string> datos);
+
         //del mkdisk
         void MKDISK(vector<string> datos);
         //void RecorreRuta(string ruta);
@@ -32,6 +35,10 @@ class Analiza
 
         //del fdisk
         void FDISK(vector<string> datos);
+
+        //del reportes
+        void REP(vector<string> datos);
+        string CreaRutaReporte(string ruta);
 
 
     protected:
